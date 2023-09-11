@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>mini-project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () =>{
+        VANTA.BIRDS({
+    el: "#vanta",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    backgroundAlpha: 0.0,
+    color1: 0xff0a45,
+    color2: 0xf5039f,
+    wingSpan: 40.00,
+    separation: 100.00,
+    alignment: 77.00,
+    cohesion: 5.00,
+    quantity: 2.00
+    })
+    setTimeout(() => {
+    const main = document.querySelector('main')
+    main.style.opacity = 1;
+    main.style.filter = 'blur(0px)';
+    }, 1000)
+})
+   
+</script>
+</head>
+<body>
+    <div id="vanta"></div>
+    <main>
+    <header>
+        <img src="./images/gunal.jfif" alt="homePage" >
+        <h1>@Thirumalai</h1>
+    </header>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/thirumalai-s-998335244">
+            <img src="./images/linkedin.jpg" alt="linkedin img" width="20">
+            Linkedin
+        </a>
+        </li>
+        <li>
+        <a href="https://instagram.com/____gunal____?utm_source=qr&igshid=OGU0MmVlOWVjOQ%3D%3D">
+            <img src="./images/instagram.png" alt="instagram img" width="20">
+            Instagram
+        </a></li>
+        <li>
+            <a href="https://twitter.com/Gunal30356784?t=_57eXZKzqptTCCauLUBAUQ&s=09">
+                <img src="./images/twitter.png" alt="twitter img" width="20">
+            Twitter
+        </a>
+        </li>
+        <li>
+            <a href="https://github.com/Gunal77">
+                <img src="./images/github.png" alt="GitHub img" width="20">
+            GitHub
+        </a>
+        </li>
+    </ul>
+    </main>
+</body>
+</html>
